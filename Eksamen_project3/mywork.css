@@ -1,0 +1,179 @@
+body {
+    background-color: #FBEBD7;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: #839ba6;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+h3 {
+  color: #7A5776;
+  font-size: 30px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+    color: #7A5776;
+    font-weight: 50;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+   
+   .menu {
+       border-bottom: 1px solid #7A5776;
+   }
+   .menubar {
+       list-style-type: none;
+       margin: 30px;
+       padding: 20px;
+       display: flex;
+       justify-content:space-between;
+       color: #7A5776;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+   }
+   .menu li a {
+    color: #7A5776;
+   }
+.current {
+  font-weight: bold;
+}
+
+   .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FBEBD7;
+    color: #7A5776;
+    padding: 20px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+.footer {
+  border-top: 1px solid #7A5776;
+  border-bottom: 1px solid #7A5776;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 10px 0;
+    }
+}
+
+   .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto; 
+    grid-gap: 10px; 
+    grid-row-gap: 20px; 
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+ 
+  .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#839ba6; 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .text-container p {
+    margin: 5px 0; 
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+  }
+  .image-container img {
+    max-width: 100%; 
+    max-height: 100%;
+    width: auto; 
+  }
+a{
+  text-decoration: none;
+  color:#f7f8f8
+}
+h1 a {
+  color: black;
+}
+.hover-image {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.hover-image:hover {
+  transform: scale(1.7); 
+}
+.text-container:hover{
+  transform: scale(1.7);
+}
+.text-container{
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px){
+  .menubar{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+@media (max-width: 600px) {
+  h2{
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  h3{
+    font-size: 25px;
+  }
+}
+
